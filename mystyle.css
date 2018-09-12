@@ -1,0 +1,58 @@
+#outerbox
+{
+    width: 600px;
+    overflow: hidden;
+    
+}
+#sliderbox
+{
+    position: relative;
+    width: 2400px;
+    animation: ssks 20s infinite;
+    
+}
+#sliderbox img
+{
+
+    float: left;
+    
+}
+
+@keyframes ssks
+{
+    
+    0%{
+        
+        left: 0px;
+    }
+    20%{
+        
+        left: 0px;
+    }
+    25%{
+        left: -600px; 
+    }
+    45%{
+        left: -600px;
+    }
+    50%
+    {
+        left: -1200px;
+    }
+    70%
+    {
+        left: -1200px;
+    }
+    75%
+    {
+        left: -1800px;
+    }
+    95%
+    {
+        left: -1800px;
+    }
+    100%
+    {
+        left: -2400px;
+    }
+}

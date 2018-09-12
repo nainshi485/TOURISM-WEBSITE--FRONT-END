@@ -1,0 +1,480 @@
+<!Doctype html>
+<html>
+<head>
+    <title>travel.india/uttar pradesh</title>
+     <link type="text/css" rel="stylesheet" href="mystyle.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type="text/css">
+        .full-body{
+                    width: 100%;
+            
+        }
+        #topbar {
+        
+                    width:100%;
+                    margin:0 auto;
+                    height:52px;
+                    position: fixed;
+                    background-color: cornflowerblue;
+                    z-index: 10;
+        }
+        
+        span:hover{
+            
+            color: red;
+        }
+        
+        span:visited{
+            
+            color: green;
+        }
+        span:active{
+            
+            color: red;
+        }
+        
+        
+        
+        body{
+            
+                background-color: #ccffff;
+                margin: 0;
+                padding: 0;
+                font-family: Arial,Tahoma,"Bitstream Vera Sans",sans-serif;
+            
+        }
+        
+        #logo{
+            
+            margin-top: 8px;
+            margin-left: 8px;
+            margin-right: 8px;
+            width:200px;
+            height: 40px;
+            float: left;
+            
+            
+            
+        }
+        
+        .topbar-section{
+            
+            
+            float: left;
+            border-left: 1px #cccccc solid;
+            height: 0%;
+        
+        }
+        
+        
+        .topbar-menu{
+            
+            font-weight: bold;
+            font-size: 90%;
+            padding: 15px 27px 0px 27px;
+            height: 35px;
+        }
+        
+        .signin{
+            
+            background-color: #00a680;
+            padding: 4px 9px 4px 9px;
+            margin: 0 20px 0 20px ;
+            color: whitesmoke;
+            margin-top: -3px;
+            float: left;
+            cursor: pointer;
+        }
+        
+        
+        #searchbox{
+            
+            background-color: #E4E4E4;
+            font-weight: bold;
+            font-size: 14px;
+            border: none;
+            padding: 5px;
+            padding-right: 35px;
+            margin-right: 0;
+            float: left;
+        }
+        #magnifying-glass{
+            
+            height: 27px;
+            margin-left: 5px;
+            
+        }
+        
+            
+        a{
+            text-decoration: none;
+        }
+        
+        .imagetrans{
+            
+            transition: transform .5s;   
+ }
+        .imagetrans:hover{
+            
+            transform: scale(1.1,1.1);
+ }
+body {font-family: Arial, Helvetica, sans-serif;}
+
+
+        hr{position: relative;top: -100px;}
+        
+    div.polaroid {
+  width: 200px;
+    height: 225px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+  margin-bottom: 25px;
+        
+}
+
+div.container {
+  text-align: center;
+  padding: 10px 20px;
+}
+        div.card{
+            position: absolute;
+        top: 820px;
+        left: 15px;
+        }
+        div.card1{
+              position: absolute;
+        top: 1180px;
+        left: 1135px;
+        }
+        
+        .button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+        .button2:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+               body {font-family: Arial, Helvetica, sans-serif;}
+
+
+.modal1 {
+    display: none; 
+    position: fixed;
+    z-index: 20; 
+    left: 0;
+    top: 0;
+    padding-top: 50px; 
+    padding-bottom: 50px;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+    -webkit-animation-name: fadeIn; 
+    -webkit-animation-duration: 0.5s;
+    animation-name: fadeIn;
+    animation-duration: 0.5s
+}
+
+.modal-content1 {
+    position: relative;
+    bottom: 0;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    background-color: #fefefe;
+    width: 80%;
+    height: 560px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.5s;
+    animation-name: slideIn;
+    animation-duration: 0.5s
+}
+
+.close1 {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    padding-top: 30px;
+}
+
+.close1:hover,
+.close1:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header1 {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+.modal-body1 {padding: 2px 16px;}
+
+
+
+@-webkit-keyframes slideIn {
+    from {bottom: -300px; opacity: 0} 
+    to {bottom: 0; opacity: 1}
+}
+
+@keyframes slideIn {
+    from {bottom: -300px; opacity: 0}
+    to {bottom: 0; opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+}
+    .collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 337px;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+    .move{
+        position: relative;
+        top: -380px;
+        left: 650px;
+    }
+    .move1{
+        position: relative;
+        top: 40px;
+        left: 0px;
+    }
+
+.active, .collapsible:hover {
+    background-color: #555;
+}
+
+.content {
+    padding: 0 18px;
+    width: 300px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
+    
+        
+    
+    </style>
+    
+    </head>    
+<body>
+    <div class="full-body">
+        <div id="topbar">
+            
+          <img id="logo" src="images/1.png" > 
+            
+            
+                        
+            <div class="topbar-section topbar-menu ">
+             <a href="Home.html"> <span>Home</span></a>
+            </div>
+           <div class="topbar-section topbar-menu">
+            
+                    <a href="Holiday%20homes.html"> <span>Holiday Homes</span></a>
+            
+            </div>
+            <div class="topbar-section topbar-menu ">
+            
+                    <a href=Flights.html> <span id>Flights</span></a>
+            
+            </div>
+            <div class="topbar-section topbar-menu ">
+            
+                    <a href=Restaurants.html> <span>Restuarants</span></a>
+            
+            </div>
+            <div class="topbar-section topbar-menu ">
+            
+                    <a href=Things%20to%20do.html> <span >Things to do</span></a>
+            
+            </div>
+            
+            <div class="topbar-section topbar-menu ">
+            
+                <input class="signin" type="button" value="SIGN IN">
+            
+            </div>
+            
+            <div class="topbar-section topbar-menu">
+                
+                <input id="searchbox" type="text" placeholder="Search">
+                <input type="image" id="magnifying-glass"src="images/search-icon.png">
+                
+            </div>
+            
+    </div>
+ 
+</div>
+           
+<button id="myBtn1" style="position: absolute; top:1580px; left:42%;" class="button button2">Plan a Trip to Uttar Pradesh</button>
+<div id="myModal1" class="modal1">
+
+
+  <div class="modal-content1">
+    <div class="modal-header1">
+      <span class="close1">&times;</span>
+      <h1>Plan a Trip...</h1>
+    </div>
+    <div class="modal-body1">
+        <div class="move1" id="outerbox">
+        <div class="move1"id="sliderbox">
+            <img src="images/nill.jpg">
+            <img src="images/fill.jpg">
+            <img src="images/kill.jpg">
+            <img src="images/bill.jpg">
+        
+        </div>
+    
+    </div>
+        <h3 style="position: relative; top: -400px; left: 10px;"><b>Choose the Best one for you...</b></h3>
+        <div class="move">
+            
+<button name="days" class="collapsible">Budget Plan</button>
+<div class="content">
+  <ul>
+        <li>Travel to Popular Locations by train in just one day</li>
+        <li>Tour includes a guide, plus independent time to explore on your own</li>
+    <li>Convenient round-trip transport from your hotels</li>
+    </ul>
+    <a href="checkout%20page.html"><button  style="" class="button button2">Chekout</button></a>
+</div>
+<br>
+<button name="days" class="collapsible">Golden Plan</button>
+<div class="content">
+  <ul>
+        <li>Travel to Popular Locations by train in just five day</li>
+        <li>Tour includes a guide, plus independent time to explore on your own</li>
+    <li>Breakfast included, Dinner included, Lunch included, Hotel pickup included</li>
+    </ul>
+    <a href="chekout%20page1.html"><button  style="" class="button button2">Chekout</button></a>
+</div>
+<br>
+<button name="days" class="collapsible">Diamond Plan</button>
+<div class="content">
+  <ul>
+        <li>Explore the most famous sites with a guide, plus much more, during this 8-day, 7-night trip</li>
+        <li>Hotel,Breakfast,Lunch,Dinner all included</li>
+    <li>Includes 7 nights of accommodations</li>
+    </ul>
+    <a href="checkout%20page3.html"><button  style="" class="button button2">Chekout</button></a>
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+            content.style.display = "none";
+        } else {
+            content.style.display = "block";
+        }
+    });
+}
+</script>
+      </div>
+        
+    </div>
+    
+  </div>
+
+</div>
+
+<script>
+var modal = document.getElementById('myModal1');
+var btn = document.getElementById("myBtn1");
+var span = document.getElementsByClassName("close1")[0];
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+span.onclick = function() {
+    modal.style.display = "none";
+}
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+    
+    <div>
+        <img src="images/UTTAR%20PRADESH%20LGO.jpg" style="width:70%; height: 200px;position: absolute; top: 60px; left: 220px;">
+        <div>
+        <p style="position: absolute;top: 290px; left: 740px; font-size:28.8px; text-align:justify;">Uttar Pradesh</p>
+        <hr style="position: absolute; top:350px;  width: 600px;left: 740px;">
+        <p style="position: absolute;top: 350px; left: 740px; font-size:17.25px;font-weight: 200; text-align:justify;">Uttar Pradesh, is a state in northern India. Abbreviated as UP, it is the most populous state in the Republic of India as well as the most populous country subdivision in the world. The densely populated state, located in the northern region of the Indian subcontinent, has over 200 million inhabitants. It was created on 1 April 1937 as the United Provinces during British rule, and was renamed Uttar Pradesh in 1950. The state is divided into 18 divisions and 75 districts with the capital being Lucknow. The main ethnic group is the Hindavi people, forming the demographic plurality. On 9 November 2000, a new state, Uttarakhand, was carved out from the state's Himalayan hill region. The two major rivers of the state, the Ganges and Yamuna, join at Allahabad and then flow as the Ganges further east. Hindi is the most widely spoken language and is also the official language of the state.</p>
+<video width="700px" height="520px"  style="position: absolute;top: 210px;left:25px; " controls>
+        <source src="images/Uttar%20Pradesh%20Tourism%20Promotional%20Video%20(Govt%20of%20UP)%20-%20YouTube.MKV" type="video/mp4">
+        Your browser does not support HTML5 video.
+</video>
+        <p style="position: absolute; top: 745px; left: 20px; font-size: 21.8px; font-weight: 400;">Tourism</p>
+        <hr style="position: absolute; top:785px; left:20px;  width: 1320px;">
+        <p style="position: absolute;top: 790px; left: 225px; font-size:17.25px;font-weight: 200; text-align: justify;">Uttar Pradesh ranks first in domestic tourist arrivals among all states of India with more than 71 million, owing to its rich and varied topography, vibrant culture, festivals, monuments, ancient places of worship, and viharas. Millions gather at Allahabad to take part in the Magh Mela festival on the banks of the Ganges.This festival is organised on a larger scale every 12th year and is called the Kumbh Mela, where over 10 million Hindu pilgrims congregate in one of the largest gatherings of people in the world.
+
+The historically important towns of Sarnath and Kushinagar are near to gorakhpur and are located not far from Varanasi. Gautama Buddha gave his first sermon after his enlightenment at Sarnath and died at Kushinagar; both are important pilgrimage sites for Buddhists. Also at Sarnath are the Pillars of Ashoka and the Lion Capital of Ashoka, both important archaeological artefacts with national significance. At a distance of 80 km from Varanasi, Ghazipur is famous not only for its Ghats on the Ganges but also for the tomb of Lord Cornwallis, the 18th-century Governor of East India Company ruled Bengal Presidency. The tomb is maintained by the Archaeological Survey of India. The state also has a bird sanctuary in Etah district called Patna Bird Sanctuary.
+
+Lucknow, the capital of the state, has several beautiful historical monuments.It has also preserved the damaged complex of the Oudh-period British Resident's quarters, which are being restored. Uttar Pradesh gives access to three World Heritage Sites: the Taj Mahal, Agra Fort, and the nearby Fatehpur Sikri. Varanasi is an ancient city famous for its ghats.</p>
+     <p style="position: absolute; top: 1100px; left: 20px; font-size: 21.8px; font-weight: 400;">Food</p>
+     <hr style="position: absolute; top:1138px; left:20px;  width: 1320px;">
+    <p style="position: absolute;top: 1135px; left: 20px;right: 225px; font-size:17.25px;font-weight: 200; text-align: justify;">A typical day-to-day traditional vegetarian meal of Uttar Pradesh, like any other North Indian thali, consists of roti (flatbread), chawal, dal, sabji, raita and papad. Many people still drink the traditional drink chaach (traditional Butter milk) with meals. On festive occasions, usually 'tava' (flat pan for roti) is considered inauspicious, and instead fried foods are consumed. A typical festive thali consists of Puri, Kachauri, sabji, pulav, papad, raita, salad and desserts (such as sewai or Kheer).
+
+Many communities have their own particular style of cuisines, such as the Jains, Kayasths and Muslims. There are also certain sub-regional delicacies. Awadhi cuisine is world-famous for dishes such as kebab, biryani, keema and nihari. Sweets occupy an important place in the Hindu diet and are eaten at social ceremonies. People make distinctive sweetmeats from milk products, including khurchan, peda, gulabjamun, petha, makkhan malai, and chamcham. The chaat in Lucknow and Banarasi Paan is known across India for its flavour and ingredients.
+
+Awadhi cuisine is from the city of Lucknow. The cuisine consists of both vegetarian and non-vegetarian dishes. Awadh has been greatly influenced by Mughal cooking techniques, and the cuisine of Lucknow bears similarities to those of Central Asia, Kashmir, Punjab and Hyderabad; and the city is known for Nawabi foods. The bawarchis and rakabdars of Awadh gave birth to the dum style of cooking or the art of cooking over a slow fire, which has become synonymous with Lucknow today. Their spread consisted of elaborate dishes like kebabs, kormas, biryani, kaliya, nahari-kulchas, zarda, sheermal, roomali rotis, and warqi parathas. The richness of Awadh cuisine lies not only in the variety of cuisine but also in the ingredients used like mutton, paneer, and rich spices including cardamom and saffron.
+
+Mughlai cuisine is a style of cooking developed in the Indian subcontinent by the imperial kitchens of the Mughal Empire. It represents the cooking styles used in North India, especially Uttar Pradesh. The cuisine is strongly influenced by the cuisine of Central Asia, and has in turn strongly similarities to the regional cuisines of Kashmir and the Punjab region. The tastes of Mughlai cuisine vary from extremely mild to spicy, and is often associated with a distinctive aroma and the taste of ground and whole spices.</p>
+
+        </div>
+    </div>
+    <div class="card">
+    <div class="polaroid imagetrans">
+  <img src="images/Taj_Mahal_(Edited).jpeg.jpg" alt="Norway" style="width:100%;">
+  <div class="container">
+    <p>The Taj Mahal, is located in Uttar Pradesh</p>
+  </div>
+</div>
+</div>
+<div class="card1">
+<div class="polaroid imagetrans">
+  <img src="images/Vegetarian_Curry.jpeg.jpg" alt="Norway" style="width:100%">
+  <div class="container">
+    <p>Uttar Pradeshi thali with naan, sultani dal, raita, and shahi paneer</p>
+  </div>
+</div>
+    </div>
+    
+    <hr style="position: absolute; top:1670px; left:5px;  width: 1325px;">
+    </body>
+    
+</html>

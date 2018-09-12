@@ -1,0 +1,493 @@
+<!Doctype html>
+<html>
+<head>
+    <title>travel.india/Goa</title>
+     <link type="text/css" rel="stylesheet" href="mystyle.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type="text/css">
+        .full-body{
+                    width: 100%;
+            
+        }
+        #topbar {
+        
+                    width:100%;
+                    margin:0 auto;
+                    height:52px;
+                    position: fixed;
+                    background-color: cornflowerblue;
+                    z-index: 10;
+        }
+        
+        span:hover{
+            
+            color: red;
+        }
+        
+        span:visited{
+            
+            color: green;
+        }
+        span:active{
+            
+            color: red;
+        }
+        
+        
+        
+        body{
+            
+                background-color: #ccffff;
+                margin: 0;
+                padding: 0;
+                font-family: Arial,Tahoma,"Bitstream Vera Sans",sans-serif;
+            
+        }
+        
+        #logo{
+            
+            margin-top: 8px;
+            margin-left: 8px;
+            margin-right: 8px;
+            width:200px;
+            height: 40px;
+            float: left;
+            
+            
+            
+        }
+        
+        .topbar-section{
+            
+            
+            float: left;
+            border-left: 1px #cccccc solid;
+            height: 0%;
+        
+        }
+        
+        
+        .topbar-menu{
+            
+            font-weight: bold;
+            font-size: 90%;
+            padding: 15px 27px 0px 27px;
+            height: 35px;
+        }
+        
+        .signin{
+            
+            background-color: #00a680;
+            padding: 4px 9px 4px 9px;
+            margin: 0 20px 0 20px ;
+            color: whitesmoke;
+            margin-top: -3px;
+            float: left;
+            cursor: pointer;
+        }
+        
+        
+        #searchbox{
+            
+            background-color: #E4E4E4;
+            font-weight: bold;
+            font-size: 14px;
+            border: none;
+            padding: 5px;
+            padding-right: 35px;
+            margin-right: 0;
+            float: left;
+        }
+        #magnifying-glass{
+            
+            height: 27px;
+            margin-left: 5px;
+            
+        }
+        
+            
+        a{
+            text-decoration: none;
+        }
+        
+        .imagetrans{
+            
+            transition: transform .5s;   
+ }
+        .imagetrans:hover{
+            
+            transform: scale(1.1,1.1);
+ }
+body {font-family: Arial, Helvetica, sans-serif;}
+
+
+        hr{position: relative;top: -100px;}
+        
+    
+        
+        .button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+        .button2:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+               body {font-family: Arial, Helvetica, sans-serif;}
+
+
+.modal1 {
+    display: none; 
+    position: fixed;
+    z-index: 20; 
+    left: 0;
+    top: 0;
+    padding-top: 50px; 
+    padding-bottom: 50px;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+    -webkit-animation-name: fadeIn; 
+    -webkit-animation-duration: 0.5s;
+    animation-name: fadeIn;
+    animation-duration: 0.5s
+}
+
+.modal-content1 {
+    position: relative;
+    bottom: 0;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    background-color: #fefefe;
+    width: 80%;
+    height: 560px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.5s;
+    animation-name: slideIn;
+    animation-duration: 0.5s
+}
+
+.close1 {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    padding-top: 30px;
+}
+
+.close1:hover,
+.close1:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header1 {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+.modal-body1 {padding: 2px 16px;}
+
+
+
+@-webkit-keyframes slideIn {
+    from {bottom: -300px; opacity: 0} 
+    to {bottom: 0; opacity: 1}
+}
+
+@keyframes slideIn {
+    from {bottom: -300px; opacity: 0}
+    to {bottom: 0; opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+}
+    .collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 337px;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+    .move{
+        position: relative;
+        top: -380px;
+        left: 650px;
+    }
+    .move1{
+        position: relative;
+        top: 40px;
+        left: 0px;
+    }
+
+.active, .collapsible:hover {
+    background-color: #555;
+}
+
+.content {
+    padding: 0 18px;
+    width: 300px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
+        
+    div.polaroid {
+  width: 200px;
+    height: 225px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+  margin-bottom: 25px;
+        
+}
+
+div.container {
+  text-align: center;
+  padding: 10px 20px;
+}
+        div.card{
+            position: absolute;
+        top: 780px;
+        left: 15px;
+        }
+        div.card1{
+              position: absolute;
+        top: 1055px;
+        left: 1135px;
+        }
+        
+   
+        
+    
+    </style>
+    
+    </head>    
+<body>
+    <div class="full-body">
+        <div id="topbar">
+            
+          <img id="logo" src="images/1.png" > 
+            
+            
+                        
+            <div class="topbar-section topbar-menu ">
+             <a href="Home.html"> <span>Home</span></a>
+            </div>
+           <div class="topbar-section topbar-menu">
+            
+                    <a href="Holiday%20homes.html"> <span>Holiday Homes</span></a>
+            
+            </div>
+            <div class="topbar-section topbar-menu ">
+            
+                    <a href=Flights.html> <span id>Flights</span></a>
+            
+            </div>
+            <div class="topbar-section topbar-menu ">
+            
+                    <a href=Restaurants.html> <span>Restuarants</span></a>
+            
+            </div>
+            <div class="topbar-section topbar-menu ">
+            
+                    <a href=Things%20to%20do.html> <span >Things to do</span></a>
+            
+            </div>
+            
+            <div class="topbar-section topbar-menu ">
+            
+                <input id="myBtn" class="signin" type="button" value="SIGN IN">
+            
+            </div>
+            
+            <div class="topbar-section topbar-menu">
+                
+                <input id="searchbox" type="text" placeholder="Search">
+                <input type="image" id="magnifying-glass"src="images/search-icon.png">
+                
+            </div>
+            
+    </div>
+ 
+</div>
+
+<button id="myBtn1" style="position: absolute; top:1350px; left:44%;" class="button button2">Plan a Trip to Goa</button>
+<div id="myModal1" class="modal1">
+
+
+  <div class="modal-content1">
+    <div class="modal-header1">
+      <span class="close1">&times;</span>
+      <h1>Plan a Trip...</h1>
+    </div>
+    <div class="modal-body1">
+        <div class="move1" id="outerbox">
+        <div class="move1"id="sliderbox">
+            <img src="images/nill.jpg">
+            <img src="images/fill.jpg">
+            <img src="images/kill.jpg">
+            <img src="images/bill.jpg">
+        
+        </div>
+    
+    </div>
+        <h3 style="position: relative; top: -400px; left: 10px;"><b>Choose the Best one for you...</b></h3>
+        <div class="move">
+            
+<button name="days" class="collapsible">Budget Plan</button>
+<div class="content">
+ <ul>
+        <li>Travel to Popular Locations by train in just one day</li>
+        <li>Tour includes a guide, plus independent time to explore on your own</li>
+    <li>Convenient round-trip transport from your hotels</li>
+    </ul>
+    <a href="checkout%20page.html"><button  style="" class="button button2">Chekout</button></a>
+</div>
+<br>
+<button name="days" class="collapsible">Golden Plan</button>
+<div class="content">
+  <ul>
+        <li>Travel to Popular Locations by train in just five day</li>
+        <li>Tour includes a guide, plus independent time to explore on your own</li>
+    <li>Breakfast included, Dinner included, Lunch included, Hotel pickup included</li>
+    </ul>
+    <a href="chekout%20page1.html"><button  style="" class="button button2">Chekout</button></a>
+</div>
+<br>
+<button name="days" class="collapsible">Diamond Plan</button>
+<div class="content">
+  <ul>
+        <li>Explore the most famous sites with a guide, plus much more, during this 8-day, 7-night trip</li>
+        <li>Hotel,Breakfast,Lunch,Dinner all included</li>
+    <li>Includes 7 nights of accommodations</li>
+    </ul>
+    <a href="checkout%20page3.html"><button  style="" class="button button2">Chekout</button></a>
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+            content.style.display = "none";
+        } else {
+            content.style.display = "block";
+        }
+    });
+}
+</script>
+      </div>
+        
+    </div>
+    
+  </div>
+
+</div>
+
+<script>
+var modal = document.getElementById('myModal1');
+var btn = document.getElementById("myBtn1");
+var span = document.getElementsByClassName("close1")[0];
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+span.onclick = function() {
+    modal.style.display = "none";
+}
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+    
+           
+
+    
+    <div>
+        <img src="images/goa%20logo.jpg" style="width:80%; height: 230px;position:absolute; top: 30px; left: 120px;">
+        <div>
+        <p style="position: absolute;top: 240px; left: 740px; color: #0066ff; font-size:28.8px; text-align:justify;">Goa</p>
+        <hr style="position: absolute; top:300px;  width: 600px;left: 740px;">
+        <p style="position: absolute;top: 300px; left: 740px; font-size:17.25px;font-weight: 200; text-align:justify;">Goa is a state on the South Western coast of India within the coastal region known as the Konkan. It is bounded by Maharashtra to the north and Karnataka to the east and south, with the Arabian Sea forming its Western coast. It is India's smallest state by area and the fourth smallest by population. Goa has the highest GDP per capita among all Indian states, that is two and a half times that of the country. It was ranked the 'best placed State' by the "Eleventh Finance Commission" for its infrastructure and ranked on top for the 'best quality of life' in India by the National Commission on Population based on the 12 Indicators.
+
+Panaji is the state's capital, while Vasco da Gama is its largest city. The historic city of Margao still exhibits the cultural influence of the Portuguese, who first landed in the early 16th century as merchants and conquered it soon thereafter. Goa is a former Portuguese province; the Portuguese overseas territory of Portuguese India existed for about 450 years until it was annexed by India in 1961.
+
+Goa is visited by large numbers of international and domestic tourists each year for its white sand beaches, nightlife, places of worship and world heritage architecture. It has rich flora and fauna, owing to its location on the Western Ghats range, a biodiversity hotspot.</p>
+<video width="700px" height="520px"  style="position: absolute;top: 210px;left:25px; " controls>
+        <source src="images/Why%20is%20GOA%20a%20Perfect%20Holiday%20Destination%20-%20Documentary%20-%20Must%20Watch%20-%20YouTube.MKV" type="video/mp4">
+        Your browser does not support HTML5 video.
+</video>
+        <p style="position: absolute; top: 725px; left: 20px; color: #0066ff; font-size: 21.8px; font-weight: 400;">Tourism</p>
+        <hr style="position: absolute; top:765px; left:20px;  width: 1320px;">
+        <p style="position: absolute;top: 770px; left: 225px; font-size:17.25px;font-weight: 200; text-align: justify;">Tourism is generally focused on the coastal areas of Goa, with decreased tourist activity inland. In 2010, there were more than 2 million tourists reported to have visited Goa, about 1.2 million of whom were from abroad. As of 2013 Goa was a destination of choice for Indian and foreign tourists, particularly Britons and Russians, with limited means who wanted to party. The state was hopeful that changes could be made which would attract a more upscale demographic.
+
+Goa stands 6th in the Top 10 Nightlife cities in the world in National Geographic Travel. One of the biggest tourist attractions in Goa is water sports. B
+            
+            eaches like Baga and Calangute offer jet-skiing, parasailing, banana boat rides, water scooter rides, and more.
+
+Over 450 years of Portuguese rule and the influence of the Portuguese culture presents to visitors to Goa a cultural environment that is not found elsewhere in India. Goa is often described as a fusion between Eastern and Western culture with Portuguese culture having a dominant position in the state be it in its architectural, cultural or social settings. The state of Goa is famous for its excellent beaches, churches, and temples. The Bom Jesus Cathedral, Fort Aguada and a new wax museum on Indian history, culture and heritage in Old Goa are other tourism destinations.</p>
+     <p style="position: absolute; top: 1000px; left: 20px; color: #0066ff; font-size: 21.8px; font-weight: 400;">Food</p>
+     <hr style="position: absolute; top:1038px; left:20px;   width: 1320px;">
+    <p style="position: absolute;top: 1035px; left: 20px;right: 225px; font-size:17.25px;font-weight: 200; text-align: justify;">Rice with fish curry is the staple diet in Goa. Goan cuisine is famous for its rich variety of fish dishes cooked with elaborate recipes. Coconut and coconut oil are widely used in Goan cooking along with chili peppers, spices, and vinegar is used in the Catholic cuisine, giving the food a unique flavour. The Goan cuisine is heavily influenced by Portuguese cuisine.
+
+Goan food may be divided into Goan Catholic and Goan Hindu cuisine with each showing very distinct tastes, characteristics, and cooking styles. Pork dishes such as Vindalho, Xacuti, chouriço, and Sorpotel are cooked for major occasions among the Goan Catholics. An exotic Goan vegetable stew, known as Khatkhate, is a very popular dish during the celebrations of festivals, Hindu and Christian alike. Khatkhate contains at least five vegetables, fresh coconut, and special Goan spices that add to the aroma.
+
+Sannas, Hitt, are variants of idli and Polle, Amboli, and Kailoleo are variants of dosa; all are native to Goa. A rich egg-based, multi-layered sweet dish known as bebinca is a favourite at Christmas.
+
+There are some places in Goa which are famous for Goa's traditional & special cuisines. Ros omlette is one of the most popular snacks and street foods in Goa, it is traditionally sold on food carts on streets.
+
+        The most popular alcoholic beverage in Goa is feni; cashew feni is made from the fermentation of the fruit of the cashew tree, while coconut feni is made from the sap of toddy palms.Goa also has a rich wine culture.</p>
+
+        </div>
+    </div>
+    <div class="card">
+    <div class="polaroid imagetrans">
+  <img src="images/257px-India_Goa_Vagator_Beach_General_view.jpg" alt="Norway" style="width:100%;">
+  <div class="container">
+    <p>Vagator Beach</p>
+  </div>
+</div>
+</div>
+<div class="card1">
+<div class="polaroid imagetrans">
+  <img src="images/Goan_Fish_Curry.jpg" alt="Norway" style="width:100%">
+  <div class="container">
+    <p>Traditional native Goan Fish Curry</p>
+  </div>
+</div>
+    </div>
+    <hr style="position: absolute; top:1430px; left:5px;  width: 1325px;">+++
+    </body>
+    
+</html>

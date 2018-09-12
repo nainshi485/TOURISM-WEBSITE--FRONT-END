@@ -1,0 +1,529 @@
+<!Doctype html>
+<html>
+<head>
+    <title>travel.india/uttar pradesh</title>
+     <link type="text/css" rel="stylesheet" href="mystyle.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type="text/css">
+        .full-body{
+                    width: 100%;
+            
+        }
+        #topbar {
+        
+                    width:100%;
+                    margin:0 auto;
+                    height:52px;
+                    position: fixed;
+                    background-color: cornflowerblue;
+                    z-index: 10;
+        }
+        
+        span:hover{
+            
+            color: red;
+        }
+        
+        span:visited{
+            
+            color: green;
+        }
+        span:active{
+            
+            color: red;
+        }
+        
+        
+        
+        body{
+            
+                background-color: #ccffff;
+                margin: 0;
+                padding: 0;
+                font-family: Arial,Tahoma,"Bitstream Vera Sans",sans-serif;
+            
+        }
+        
+        #logo{
+            
+            margin-top: 8px;
+            margin-left: 8px;
+            margin-right: 8px;
+            width:200px;
+            height: 40px;
+            float: left;
+            
+            
+            
+        }
+        
+        .topbar-section{
+            
+            
+            float: left;
+            border-left: 1px #cccccc solid;
+            height: 0%;
+        
+        }
+        
+        
+        .topbar-menu{
+            
+            font-weight: bold;
+            font-size: 90%;
+            padding: 15px 27px 0px 27px;
+            height: 35px;
+        }
+        
+        .signin{
+            
+            background-color: #00a680;
+            padding: 4px 9px 4px 9px;
+            margin: 0 20px 0 20px ;
+            color: whitesmoke;
+            margin-top: -3px;
+            float: left;
+            cursor: pointer;
+        }
+        
+        
+        #searchbox{
+            
+            background-color: #E4E4E4;
+            font-weight: bold;
+            font-size: 14px;
+            border: none;
+            padding: 5px;
+            padding-right: 35px;
+            margin-right: 0;
+            float: left;
+        }
+        #magnifying-glass{
+            
+            height: 27px;
+            margin-left: 5px;
+            
+        }
+        
+            
+        a{
+            text-decoration: none;
+        }
+        
+        .imagetrans{
+            
+            transition: transform .5s;   
+ }
+        .imagetrans:hover{
+            
+            transform: scale(1.1,1.1);
+ }
+body {font-family: Arial, Helvetica, sans-serif;}
+
+
+        hr{position: relative;top: -100px;}
+        
+    div.polaroid {
+  width: 200px;
+    height: 225px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+  margin-bottom: 25px;
+        
+} div.polaroid1 {
+  width: 75%;
+    height: 50%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+  margin-bottom: 25px;
+        
+}
+
+div.container {
+  text-align: center;
+  padding: 10px 20px;
+}
+        div.card{
+            position: absolute;
+        top: 1370px;
+        left: 15px;
+        }
+        div.card1{
+              position: absolute;
+        top: 1370px;
+        left: 1135px;
+        }div.card2{
+              position: absolute;
+        top: 820px;
+        left:250px;
+        }
+        div.card3{
+              position: absolute;
+        top: 1370px;
+        left: 290px;
+        }div.card4{
+              position: absolute;
+        top: 1370px;
+        left: 570px;
+        }div.card5{
+              position: absolute;
+        top: 1370px;
+        left: 850px;
+        }
+        
+        .button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+        .button2:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+               body {font-family: Arial, Helvetica, sans-serif;}
+
+
+.modal1 {
+    display: none; 
+    position: fixed;
+    z-index: 20; 
+    left: 0;
+    top: 0;
+    padding-top: 50px; 
+    padding-bottom: 50px;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+    -webkit-animation-name: fadeIn; 
+    -webkit-animation-duration: 0.5s;
+    animation-name: fadeIn;
+    animation-duration: 0.5s
+}
+
+.modal-content1 {
+    position: relative;
+    bottom: 0;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    background-color: #fefefe;
+    width: 80%;
+    height: 560px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.5s;
+    animation-name: slideIn;
+    animation-duration: 0.5s
+}
+
+.close1 {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    padding-top: 30px;
+}
+
+.close1:hover,
+.close1:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header1 {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+.modal-body1 {padding: 2px 16px;}
+
+
+
+@-webkit-keyframes slideIn {
+    from {bottom: -300px; opacity: 0} 
+    to {bottom: 0; opacity: 1}
+}
+
+@keyframes slideIn {
+    from {bottom: -300px; opacity: 0}
+    to {bottom: 0; opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+}
+    .collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 337px;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+    .move{
+        position: relative;
+        top: -380px;
+        left: 650px;
+    }
+    .move1{
+        position: relative;
+        top: 40px;
+        left: 0px;
+    }
+
+.active, .collapsible:hover {
+    background-color: #555;
+}
+
+.content {
+    padding: 0 18px;
+    width: 300px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
+    
+        
+    
+    </style>
+    
+    </head>    
+<body>
+    <div class="full-body">
+        <div id="topbar">
+            
+          <img id="logo" src="images/1.png" > 
+            
+            
+                        
+            <div class="topbar-section topbar-menu ">
+             <a href="Home.html"> <span>Home</span></a>
+            </div>
+           <div class="topbar-section topbar-menu">
+            
+                    <a href="Holiday%20homes.html"> <span>Holiday Homes</span></a>
+            
+            </div>
+            <div class="topbar-section topbar-menu ">
+            
+                    <a href=Flights.html> <span id>Flights</span></a>
+            
+            </div>
+            <div class="topbar-section topbar-menu ">
+            
+                    <a href=Restaurants.html> <span>Restuarants</span></a>
+            
+            </div>
+            <div class="topbar-section topbar-menu ">
+            
+                    <a href=Things%20to%20do.html> <span >Things to do</span></a>
+            
+            </div>
+            
+            <div class="topbar-section topbar-menu ">
+            
+                <input class="signin" type="button" value="SIGN IN">
+            
+            </div>
+            
+            <div class="topbar-section topbar-menu">
+                
+                <input id="searchbox" type="text" placeholder="Search">
+                <input type="image" id="magnifying-glass"src="images/search-icon.png">
+                
+            </div>
+            
+    </div>
+ 
+</div>
+           
+<button id="myBtn1" style="position: absolute; top:1680px; left:42%;" class="button button2">Plan a Trip to Gir </button>
+<div id="myModal1" class="modal1">
+
+
+  <div class="modal-content1">
+    <div class="modal-header1">
+      <span class="close1">&times;</span>
+      <h1>Plan a Trip...</h1>
+    </div>
+    <div class="modal-body1">
+        <div class="move1" id="outerbox">
+        <div class="move1"id="sliderbox">
+            <img src="images/1357309587_Gir-Forest-Lions5.jpg">
+            <img src="images/gir.jpg">
+            <img src="images/gir_lion4.jpg">
+            <img src="images/wildlife-tours-package-4.jpg">
+        
+        </div>
+    
+    </div>
+        <h3 style="position: relative; top: -400px; left: 10px;"><b>Choose the Best one for you...</b></h3>
+        <div class="move">
+            
+<button name="days" class="collapsible">Budget Plan</button>
+<div class="content">
+  <ul>
+        <li>Travel to Popular Locations by train in just one day</li>
+        <li>Tour includes a guide, plus independent time to explore on your own</li>
+    <li>Convenient round-trip transport from your hotels</li>
+    </ul>
+    <a href="checkout%20page.html"><button  style="" class="button button2">Chekout</button></a>
+</div>
+<br>
+<button name="days" class="collapsible">Golden Plan</button>
+<div class="content">
+  <ul>
+        <li>Travel to Popular Locations by train in just five day</li>
+        <li>Tour includes a guide, plus independent time to explore on your own</li>
+    <li>Breakfast included, Dinner included, Lunch included, Hotel pickup included</li>
+    </ul>
+    <a href="chekout%20page1.html"><button  style="" class="button button2">Chekout</button></a>
+</div>
+<br>
+<button name="days" class="collapsible">Diamond Plan</button>
+<div class="content">
+  <ul>
+        <li>Explore the most famous sites with a guide, plus much more, during this 8-day, 7-night trip</li>
+        <li>Hotel,Breakfast,Lunch,Dinner all included</li>
+    <li>Includes 7 nights of accommodations</li>
+    </ul>
+    <a href="checkout%20page3.html"><button  style="" class="button button2">Chekout</button></a>
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+            content.style.display = "none";
+        } else {
+            content.style.display = "block";
+        }
+    });
+}
+</script>
+      </div>
+        
+    </div>
+    
+  </div>
+
+</div>
+
+<script>
+var modal = document.getElementById('myModal1');
+var btn = document.getElementById("myBtn1");
+var span = document.getElementsByClassName("close1")[0];
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+span.onclick = function() {
+    modal.style.display = "none";
+}
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+    
+    <div>
+        <img src="images/gir%20logo.jpg" style="width:70%; height: 200px;position: absolute; top: 60px; left: 220px;">
+        <div>
+        <p style="position: absolute;top: 290px; color: red;left: 740px; font-size:28.8px; text-align:justify;">Gir National Park</p>
+        <hr style="position: absolute; top:350px;  width: 600px;left: 740px;">
+        <p style="position: absolute;top: 350px; left: 740px; font-size:22.25px;font-weight: 200; text-align:justify;"> We all know, Gir is the only natural habitat of world popular Asiatic Lions. Where our tailor made Gir Wild Life Tour Package gives you an unparalleled opportunity to watch those rare Asiatic Lions coupled with thousands of other elusive wild animals and hard-to-find birds like uncommon Asiatic wild ass, hyenas, Gir foxes, pygmy woodpecker, brown fish owl and black buck etc, it will make sure that you receive the highest standards of luxury, comfort and travel. Additionally, all this is available at very competitive rates.Besides Africa, Gir National Park in Gujarat is the only place in the world where you can spot lions roaming free in the wild.  </p>
+<video width="700px" height="480px"  style="position: absolute;top: 240px;left:25px; margin-top: 40px; " controls>
+        <source src="images/(39)%20Gir%20-%20Amitabh%20Bachchan%20-%20Gujarat%20Tourism%20-%20YouTube.MKV" type="video/mp4">
+        Your browser does not support HTML5 video.
+</video>
+        <p style="position: absolute; top: 745px; left: 20px; font-size: 21.8px; color: red; font-weight: 400;">Features</p>
+        <hr style="position: absolute; top:785px; left:20px;  width: 1320px;">
+            <p style="position: absolute;top: 1125px; left: 15px; font-size:17.25px;font-weight: 200; text-align: justify;"><b style=" color: darkblue;">Animals:</b>The entire forest area of the Gir National Park is dry and deciduous which provides best habitat for Asiatic Lions. As per the new statics of 2015, the entire Saurashtra Region is inhabited by 523 Lions and more than 300 Leopards. Apart from these two animals the park is a home to two different species of Deer. The Sambar is counted largest Indian Deer. The Gir forest is also known for the Chowsingha – the world’s only four horned antelope. The Jackal, striped Hyena and India Fox are some of the smaller carnivores found in Gir Forest.<br>
+
+<b style=" color: darkblue;">Birds:</b> The exotic flora of Gir National Park gives shelter to more than 200 species of birds and moreover the sanctuary has been declared an important bird area by the Indian Bird Conservation Network. Gir is also habitat of raptors like critically endangered white-backed and long-billed vultures.<br>
+
+<b style=" color: darkblue;">Reptiles:</b>Sasan Gir is blessed with more than 40 species of reptiles and amphibians. Kamleshwar – a large reservoir in the sanctuary is the best spot where Marsh Crocodile can be seen in large numbers. Park has even many species of snake including King Kobra, the Russell’s viper, Saw-scaled viper and the Krait.<br>
+
+     
+
+        </div>
+    </div>
+    <div class="card2">
+    <div class="polaroid1 imagetrans">
+  <img src="images/Panorama_of_Jungle-Dedakadi_Area-Sasan_Gir-Gujarat-India.jpg" alt="Norway" style="width:100%; ">
+  <div class="container">
+    <p style=" color: darkblue;">Panorama of Jungle</p>
+  </div>
+</div>
+</div>
+    <div class="card">
+    <div class="polaroid imagetrans">
+  <img src="images/Teak_trees_in_Gir_Forest_National_Park.jpg" alt="Norway" style="width:100%;">
+  <div class="container">
+    <p style=" color: darkblue;">Teak trees</p>
+  </div>
+</div>
+</div>
+    <div class="card3">
+<div class="polaroid imagetrans">
+  <img src="images/Mugger_crocodile_in_Gir_Forest_National_Park.jpg" alt="Norway" style="width:100%">
+  <div class="container">
+    <p style=" color: darkblue;">Mugger crocodile</p>
+  </div>
+</div>
+    </div>
+    <div class="card4">
+<div class="polaroid imagetrans">
+  <img src="images/Leopard_in_Gir_10_Feb_2015_AJT_Johnsingh_IMG_4861.jpg" alt="Norway" style="width:100%; height: 70%;">
+  <div class="container">
+    <p style=" color: darkblue;">Indian leopard</p>
+  </div>
+</div>
+    </div>
+    <div class="card5">
+<div class="polaroid imagetrans">
+  <img src="images/800px-Striped_Hyena_(Hyaena_hyaena).jpg" alt="Norway" style="width:100%; height: 70%;">
+  <div class="container">
+    <p style=" color: darkblue;">Striped hyena</p>
+  </div>
+</div>
+    </div>
+<div class="card1">
+<div class="polaroid imagetrans">
+  <img src="images/Indian_Lion_Gir.jpg" alt="Norway" style="width:100%">
+  <div class="container">
+    <p style=" color: darkblue;">An Asiatic lion</p>
+  </div>
+</div>
+    </div>
+    
+    <hr style="position: absolute; top:1750px; left:5px;  width: 1325px;">
+    </body>
+    
+</html>

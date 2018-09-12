@@ -1,0 +1,494 @@
+<!Doctype html>
+<html>
+<head>
+    <title>travel.india</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <style type="text/css">
+        .full-body{
+                    width: 100%;
+            
+        }
+        #topbar {
+        
+                    width:100%;
+                    margin:0 auto;
+                    height:52px;
+                    position: fixed;
+                    top: -.5px;
+            
+                    background-color: cornflowerblue;
+                    z-index: 10;
+        }
+        
+        span:hover{
+            
+            color: red;
+        }
+        
+        span:visited{
+            
+            color: green;
+        }
+        span:active{
+            
+            color: red;
+        }
+        
+        
+        
+        body{
+            
+                background-color: #f2f2f2;
+                margin: 0;
+                padding: 0;
+                font-family: Arial,Tahoma,"Bitstream Vera Sans",sans-serif;
+            
+        }
+        
+        #logo{
+            
+            margin-top: 8px;
+            margin-left: 8px;
+            margin-right: 8px;
+            width:200px;
+            height: 40px;
+            float: left;
+            
+            
+            
+        }
+        
+        .topbar-section{
+            
+            
+            float: left;
+            border-left: 1px #cccccc solid;
+            height: 0%;
+        
+        }
+        
+        
+        .topbar-menu{
+            
+            font-weight: bold;
+            font-size: 90%;
+            padding: 15px 27px 0px 27px;
+            height: 35px;
+        }
+        
+        .signin{
+            
+            background-color: #00a680;
+            padding: 4px 9px 4px 9px;
+            margin: 0 20px 0 20px ;
+            color: whitesmoke;
+            margin-top: -3px;
+            float: left;
+            cursor: pointer;
+        }
+        
+        
+        #searchbox{
+            
+            background-color: #E4E4E4;
+            font-weight: bold;
+            font-size: 14px;
+            border: none;
+            padding: 5px;
+            padding-right: 35px;
+            margin-right: 0;
+            float: left;
+        }
+        #magnifying-glass{
+            
+            height: 27px;
+            margin-left: 5px;
+        }
+        #goa{
+            
+            width: 1350px;
+            height:450px;
+            margin-top: 50px;
+            z-index: 1;
+        }
+        #lowest{
+            
+            z-index: 2;
+            font-size: 32px;
+            color: White;
+            font-weight:700;
+            position:relative;
+            left: 375px;
+            top: -320px;
+        }
+        #ssksbox{
+            
+            z-index: 3;
+            font-stretch: 100%;
+            width: 500px;
+            font-size:16px;
+            height: 50px;
+            position: relative;
+            left: 60px;
+            top: -320px;
+            float: left;
+            border: none;
+            font-weight: 500;
+            border-top-right-radius: 0px;
+            border-top-left-radius: 50px;
+            border-bottom-right-radius: 0px;
+            border-bottom-left-radius: 50px;
+            padding-left:32px;
+        }
+            
+        a{
+            text-decoration: none;
+        }
+        
+        #checkbox{
+            
+            z-index: 4;
+            width: 150px;
+            height: 50px;
+            position: relative;
+            left: 60px;
+            top: -320px;
+            float: left;
+            border: none;
+            font-weight: bold;
+        }
+        #ssksselect{
+            
+            z-index: 4;
+            width: 160px;
+            height: 52px;
+            position: relative;
+            left: 60px;
+            top: -320px;
+            float: left;
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+            
+        }
+        .findssks{
+            
+            background-color:#00a680;
+            border-top-right-radius: 50px;
+            border-top-left-radius: 0px;
+            border-bottom-right-radius: 50px;
+            border-bottom-left-radius: 0px;
+            z-index: 4;
+            width: 210px;
+            height: 52px;
+            cursor: pointer;
+            position: relative;
+            left: 60px;
+            top: -320px;
+            float: left;
+            color: white;
+            font-size: 20px;
+            font-stretch: 100%;
+            border: none;
+            font-weight: bold;
+           
+        }
+          .imagetrans{
+            
+            transition: transform .1s;   
+ }
+        .imagetrans:hover{
+            
+            transform: scale(1.183,1.183);
+ }
+        
+body {font-family: Arial, Helvetica, sans-serif;}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 20; 
+    padding-top: 50px; 
+    padding-bottom: 50px;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    height: 560px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+    #signingoogle{
+            
+                position: relative;
+                left:-70px;
+                top: 170px;
+                width:300px;
+            height: 50px;
+            
+ }
+        #signintwitter{
+            
+            position: relative;
+            left: -375px;
+            top:245px;
+            width: 300px;
+            height: 50px;
+ }
+        #signinfb{
+            position: relative;
+            left: 117px;
+            top:260px;
+            width: 300px;
+            height: 50px;
+            z-index: 5;
+ }
+        #gig:hover{ text-decoration: underline;
+            
+            
+ }
+        #privacy{
+            
+            position: relative;
+            top: 280px;
+            left: 127px;
+            z-index: 1;
+  }
+        #signssks{
+            
+            position: relative;
+            left:610px;
+            top: -540px;
+            font-size: 25px;
+            color: black;
+            padding: 10px;
+            z-index: 1;
+ }
+        hr{position: relative;top: -100px;}
+
+        
+        
+        
+    
+    </style>
+    
+    </head>    
+<body>
+    <div class="full-body">
+        <div id="topbar">
+            
+          <img id="logo" src="images/1.png" > 
+            
+            
+                        
+            <div class="topbar-section topbar-menu ">
+             <a href="Home.html"> <span style="color: red;">Home</span></a>
+            </div>
+           <div class="topbar-section topbar-menu">
+            
+                    <a href="Holiday%20homes.html"> <span>Holiday Homes</span></a>
+            
+            </div>
+            <div class="topbar-section topbar-menu ">
+            
+                    <a href=Flights.html> <span id>Flights</span></a>
+            
+            </div>
+            <div class="topbar-section topbar-menu ">
+            
+                    <a href=Restaurants.html> <span>Restuarants</span></a>
+            
+            </div>
+            <div class="topbar-section topbar-menu ">
+            
+                    <a href=Things%20to%20do.html> <span >Things to do</span></a>
+            
+            </div>
+            
+            <div class="topbar-section topbar-menu ">
+            
+                 <input id="myBtn" class="signin" type="button" value="SIGN IN">
+            
+            </div>
+            
+            <div class="topbar-section topbar-menu">
+                
+                <input id="searchbox" type="text" placeholder="Search">
+                <input type="image" id="magnifying-glass"src="images/search-icon.png">
+                
+            </div>
+            
+    </div>
+        
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>Sign In</h2>
+    </div>
+    <div class="modal-body">
+                    <span style="position: relative; color:black;left: 117px;top: 60px; font-size: 30px;font-weight:300;">continue with:</span>
+                    <input class="imagetrans" type="image" id="signingoogle" src="images/sign-in-with-google%20(2).png">
+                    <input class="imagetrans" type="image" id="signintwitter" src="images/twitter_login_button%20(2).png">
+                    <input class="imagetrans" type="image" id="signinfb" src="images/facebook-sign-in-button.png">
+                <p id="privacy">By proceeding, you agree to our<br> <span id="gig" style="color:#069; cursor: pointer;">Privacy Policy</span> and <span id="gig" style="color: #069; cursor: pointer;">Terms of Use.</span></p>
+    <hr width="1" size="400">
+    <div id="signssks">
+        <p style="font-weight: bold;">Already a Travel.india member?</p>
+        <p style="font-size: 20px; ">Email address</p>
+        <input style="width:300px;height: 40px;" type="email">
+        <p style="font-size: 20px; ">Password</p>
+        <input style="width:300px;height: 40px;" type="password">
+        <p id="gig" style="color:#069; cursor: pointer;">Forget Password?</p>
+        <input style="width:100px;height: 40px; cursor: pointer; background-color: #00a680;color: whitesmoke;"type="submit" value="Log IN">                            
+    
+    
+    </div>
+    </div>
+    
+  </div>
+
+</div>
+
+<script>
+var modal = document.getElementById('myModal');
+var btn = document.getElementById("myBtn");
+var span = document.getElementsByClassName("close")[0];
+
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+    
+     <div class="slider-holder" id="goa">
+        <span id="slider-image-1"></span>
+        <span id="slider-image-2"></span>
+        <span id="slider-image-3"></span>
+        <span id="slider-image-4"></span>
+        <div class="image-holder">
+            <img src="images/the-view-of-gulmarg1350.jpg" class="slider-image" />
+            <img src="images/taj-maha1350.jpg" class="slider-image" />
+            <img src="images/sunset-3840x2160-beach-paradise-landscape-scenery-4k-1350.jpg" class="slider-image" />
+            <img src="images/durd1350.jpg" class="slider-image" />
+        </div>
+        <div class="button-holder">
+            <a href="#slider-image-1" class="slider-change"></a>
+            <a href="#slider-image-2" class="slider-change"></a>
+            <a href="#slider-image-3" class="slider-change"></a>
+            <a href="#slider-image-4" class="slider-change"></a>
+        </div>
+    </div>
+    
+
+    <div>
+        <p id="lowest">Latest reviews. Lowest prices.</p>
+        <input id="ssksbox" type="text" placeholder="City or hotel name">
+        <input id="checkbox" placeholder="Check In"type="text" onfocus="(this.type='date')" onblur="(this.type='text')">
+        <input id="checkbox" placeholder="Check Out"type="text" onfocus="(this.type='date')" onblur="(this.type='text')">
+        
+         <select id="ssksselect">
+            <option>1 room, 1 guest</option>
+            <option>1 room, 2 guests</option>
+             <option>1 room, 3 guests</option>
+             <option>Penthouse</option>
+             <option>Villa</option>
+        </select>
+        
+        <input class="findssks"type="button" value="Find Hotels">
+    </div>
+    
+    <div>
+        <img style="position: absolute;top: 525px;left: 30px;"  src="images/Capture5.JPG">
+        
+        <p style="position: absolute;top: 600px;left: 30px; font-size:20px;color: #2c2c2c; ">Travel.india compares prices from 200+ booking sites to help you<br> find the lowest price on the right hotel for you.</p>
+        <img type="image" style="position: absolute;top: 525px;left: 780px; height: 200px; width: 500px; border: 2px solid black;" src="images/6.png">
+    </div>
+    <div>
+        <p style="position: absolute;top: 715px;left: 30px; font-size:24px;font-weight: 700;">Popular Destinations</p>
+        <a href="goa.html"><input class="imagetrans"class="container" style="position: absolute;top: 790px; border: 1px black solid;left: 30px; width: 299.719px;height: 200px; padding:12;  " type="image" src="images/goa%20(1).jpg"></a>
+        <a href="himanchal%20pradesh.html"><input class="imagetrans" style="position: absolute; border: 1px black solid;  top: 790px;left: 360px; width: 299.719px;height: 200px; padding:12;  " type="image" src="images/himanchal%20pra.jpg"></a>
+        <a href="uttar%20pradesh.html"><input class="imagetrans" style="position: absolute;top: 790px; border: 1px black solid;left: 690px; width: 299.719px;height: 200px; padding:12;  " type="image" src="images/uttar%20pra.jpg"></a>
+        <input class="imagetrans" style="position: absolute;top: 790px; border: 1px black solid;left: 1020px; width: 299.719px;height: 200px; padding:12;  " type="image" src="images/Kerala.jpg">
+    </div>
+    
+    <div>
+        <p style="position: absolute;top: 1015px;left: 30px; font-size:24px;font-weight: 700;">Famous Beaches</p>
+         <input class="imagetrans" style="position: absolute;top: 1090px; border: 1px black solid;left: 30px; width: 299.719px;height: 200px; padding:12;  " type="image" src="images/fill.jpg">
+        <input class="imagetrans" style="position: absolute; border: 1px black solid;  top: 1090px;left: 360px; width: 299.719px;height: 200px; padding:12;  " type="image" src="images/bill.jpg">
+        <input class="imagetrans" style="position: absolute;top: 1090px; border: 1px black solid;left: 690px; width: 299.719px;height: 200px; padding:12;  " type="image" src="images/nill.jpg">
+        <input class="imagetrans" style="position: absolute;top: 1090px; border: 1px black solid;left: 1020px; width: 299.719px;height: 200px; padding:12;  " type="image" src="images/kill.jpg">
+    </div>
+        
+</div>
+    
+    </body>
+    
+</html>

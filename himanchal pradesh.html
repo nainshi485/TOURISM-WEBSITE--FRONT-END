@@ -1,0 +1,478 @@
+<!Doctype html>
+<html>
+<head>
+    <title>travel.india/Himanchal</title>
+    <link type="text/css" rel="stylesheet" href="mystyle.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type="text/css">
+       .full-body{
+                    width: 100%;
+            
+        }
+        #topbar {
+        
+                    width:100%;
+                    margin:0 auto;
+                    height:52px;
+                    position: fixed;
+                    background-color: cornflowerblue;
+                    z-index: 10;
+        }
+        
+        span:hover{
+            
+            color: red;
+        }
+        
+        span:visited{
+            
+            color: green;
+        }
+        span:active{
+            
+            color: red;
+        }
+        
+        
+        
+        body{
+            
+                background-color: #ccffff;
+                margin: 0;
+                padding: 0;
+                font-family: Arial,Tahoma,"Bitstream Vera Sans",sans-serif;
+            
+        }
+        
+        #logo{
+            
+            margin-top: 8px;
+            margin-left: 8px;
+            margin-right: 8px;
+            width:200px;
+            height: 40px;
+            float: left;
+            
+            
+            
+        }
+        
+        .topbar-section{
+            
+            
+            float: left;
+            border-left: 1px #cccccc solid;
+            height: 0%;
+        
+        }
+        
+        
+        .topbar-menu{
+            
+            font-weight: bold;
+            font-size: 90%;
+            padding: 15px 27px 0px 27px;
+            height: 35px;
+        }
+        
+        .signin{
+            
+            background-color: #00a680;
+            padding: 4px 9px 4px 9px;
+            margin: 0 20px 0 20px ;
+            color: whitesmoke;
+            margin-top: -3px;
+            float: left;
+            cursor: pointer;
+        }
+        
+        
+        #searchbox{
+            
+            background-color: #E4E4E4;
+            font-weight: bold;
+            font-size: 14px;
+            border: none;
+            padding: 5px;
+            padding-right: 35px;
+            margin-right: 0;
+            float: left;
+        }
+        #magnifying-glass{
+            
+            height: 27px;
+            margin-left: 5px;
+            
+        }
+        
+            
+        a{
+            text-decoration: none;
+        }
+        
+        .imagetrans{
+            
+            transition: transform .5s;   
+ }
+        .imagetrans:hover{
+            
+            transform: scale(1.1,1.1);
+ }
+body {font-family: Arial, Helvetica, sans-serif;}
+
+
+        
+        
+        .button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+        .button2:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+               body {font-family: Arial, Helvetica, sans-serif;}
+
+
+.modal1 {
+    display: none; 
+    position: fixed;
+    z-index: 20; 
+    left: 0;
+    top: 0;
+    padding-top: 50px; 
+    padding-bottom: 50px;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+    -webkit-animation-name: fadeIn; 
+    -webkit-animation-duration: 0.5s;
+    animation-name: fadeIn;
+    animation-duration: 0.5s
+}
+
+.modal-content1 {
+    position: relative;
+    bottom: 0;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    background-color: #fefefe;
+    width: 80%;
+    height: 560px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.5s;
+    animation-name: slideIn;
+    animation-duration: 0.5s
+}
+
+.close1 {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    padding-top: 30px;
+}
+
+.close1:hover,
+.close1:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header1 {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+.modal-body1 {padding: 2px 16px;}
+
+
+
+@-webkit-keyframes slideIn {
+    from {bottom: -300px; opacity: 0} 
+    to {bottom: 0; opacity: 1}
+}
+
+@keyframes slideIn {
+    from {bottom: -300px; opacity: 0}
+    to {bottom: 0; opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+}
+    .collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 337px;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+    .move{
+        position: relative;
+        top: -380px;
+        left: 650px;
+    }
+    .move1{
+        position: relative;
+        top: 40px;
+        left: 0px;
+    }
+
+.active, .collapsible:hover {
+    background-color: #555;
+}
+
+.content {
+    padding: 0 18px;
+    width: 300px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
+        hr{position: relative;top: -100px;}
+        
+    div.polaroid {
+  width: 200px;
+    height: 225px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+  margin-bottom: 25px;
+        
+}
+
+div.container {
+  text-align: center;
+  padding: 10px 20px;
+}
+        div.card{
+            position: absolute;
+        top: 820px;
+        left: 15px;
+        }
+        div.card1{
+              position: absolute;
+        top: 1280px;
+        left: 1135px;
+        }
+        
+     
+        
+    
+    </style>
+    
+    </head>    
+<body>
+    <div class="full-body">
+        <div id="topbar">
+            
+          <img id="logo" src="images/1.png" > 
+            
+            
+                        
+            <div class="topbar-section topbar-menu ">
+             <a href="Home.html"> <span>Home</span></a>
+            </div>
+           <div class="topbar-section topbar-menu">
+            
+                    <a href="Holiday%20homes.html"> <span>Holiday Homes</span></a>
+            
+            </div>
+            <div class="topbar-section topbar-menu ">
+            
+                    <a href=Flights.html> <span id>Flights</span></a>
+            
+            </div>
+            <div class="topbar-section topbar-menu ">
+            
+                    <a href=Restaurants.html> <span>Restuarants</span></a>
+            
+            </div>
+            <div class="topbar-section topbar-menu ">
+            
+                    <a href=Things%20to%20do.html> <span >Things to do</span></a>
+            
+            </div>
+            
+            <div class="topbar-section topbar-menu ">
+            
+                <input id="myBtn" class="signin" type="button" value="SIGN IN">
+            
+            </div>
+            
+            <div class="topbar-section topbar-menu">
+                
+                <input id="searchbox" type="text" placeholder="Search">
+                <input type="image" id="magnifying-glass"src="images/search-icon.png">
+                
+            </div>
+            
+    </div>
+ 
+</div>
+<button id="myBtn1" style="position: absolute; top:1680px; left:44%;" class="button button2">Plan a Trip to Himanchal</button>
+<div id="myModal1" class="modal1">
+
+
+  <div class="modal-content1">
+    <div class="modal-header1">
+      <span class="close1">&times;</span>
+      <h1>Plan a Trip...</h1>
+    </div>
+    <div class="modal-body1">
+        <div class="move1" id="outerbox">
+        <div class="move1"id="sliderbox">
+            <img src="images/nill.jpg">
+            <img src="images/fill.jpg">
+            <img src="images/kill.jpg">
+            <img src="images/bill.jpg">
+        
+        </div>
+    
+    </div>
+        <h3 style="position: relative; top: -400px; left: 10px;"><b>Choose the Best one for you...</b></h3>
+        <div class="move">
+            
+<button name="days" class="collapsible">Budget Plan</button>
+<div class="content">
+  <ul>
+        <li>Travel to Popular Locations by train in just one day</li>
+        <li>Tour includes a guide, plus independent time to explore on your own</li>
+    <li>Convenient round-trip transport from your hotels</li>
+    </ul>
+    <a href="checkout%20page.html"><button  style="" class="button button2">Chekout</button></a>
+</div>
+<br>
+<button name="days" class="collapsible">Golden Plan</button>
+<div class="content">
+  <ul>
+        <li>Travel to Popular Locations by train in just five day</li>
+        <li>Tour includes a guide, plus independent time to explore on your own</li>
+    <li>Breakfast included, Dinner included, Lunch included, Hotel pickup included</li>
+    </ul>
+    <a href="chekout%20page1.html"><button  style="" class="button button2">Chekout</button></a>
+</div>
+<br>
+<button name="days" class="collapsible">Diamond Plan</button>
+<div class="content">
+  <ul>
+        <li>Explore the most famous sites with a guide, plus much more, during this 8-day, 7-night trip</li>
+        <li>Hotel,Breakfast,Lunch,Dinner all included</li>
+    <li>Includes 7 nights of accommodations</li>
+    </ul>
+    <a href="checkout%20page3.html"><button  style="" class="button button2">Chekout</button></a>
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+            content.style.display = "none";
+        } else {
+            content.style.display = "block";
+        }
+    });
+}
+</script>
+      </div>
+        
+    </div>
+    
+  </div>
+
+</div>
+
+<script>
+var modal = document.getElementById('myModal1');
+var btn = document.getElementById("myBtn1");
+var span = document.getElementsByClassName("close1")[0];
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+span.onclick = function() {
+    modal.style.display = "none";
+}
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+    
+    <div>
+        <img src="images/HIMANCHL%20LGO.jpg" style="width:70%; height: 200px;position: absolute; top: 40px; left: 200px;">
+        <div>
+        <p style="position: absolute;top: 240px; left: 740px; font-size:28.8px; color: red; text-align:justify;">Himachal Pradesh</p>
+        <hr style="position: absolute; top:300px;  width: 600px;left: 740px;">
+        <p style="position: absolute;top: 300px; left: 740px; font-size:19.25px;font-weight: 200; text-align:justify;">Himachal Pradesh literally "snow-laden province" is a state of India located in North India. Situated in the Western Himalayas, it is bordered by states of Jammu and Kashmir on the north, Punjab on the west, Haryana on the southwest, Uttarakhand on the southeast, and the Tibet Autonomous Region on the east. At its southernmost point, it also touches the state of Uttar Pradesh. The state's name was coined from the Sanskrit—Him means 'snow' and achal means 'land' or 'abode'—by acharya Diwakar Datt Sharma, one of the state's eminent Sanskrit scholars.
+
+</p>
+<video width="700px" height="520px"  style="position: absolute;top: 210px;left:25px; " controls>
+        <source src="images/Himachal%20Pradesh%20Tourism%20-%20Point%20Of%20View%20-%20Trailer%20-%20YouTube.MKV" type="video/mp4">
+        Your browser does not support HTML5 video.
+</video>
+        <p style="position: absolute; top: 745px; left: 20px; font-size: 21.8px; color: red; font-weight: 400;">Tourism</p>
+        <hr style="position: absolute; top:785px; left:20px;  width: 1320px;">
+        <p style="position: absolute;top: 790px; left: 225px; font-size:19.25px;font-weight: 200; text-align: justify;">Tourism in Himachal Pradesh is a major contributor to the state's economy and growth. The mountainous state with its Himalayan landscapes attracts tourists from all over the world. Hill stations like Shimla, Manali, Dharamshala, Dalhousie, Chamba, Khajjiar, Kullu and Kasauli are popular destinations for both domestic and foreign tourists. The state has many important pilgrimage centres with prominent Hindu temples like Naina Devi Temple, Vajreshwari Devi Temple, Jwala Ji Temple, Chintpurni, Chamunda Devi Temple, Baijnath Temple, Bhimakali Temple, Bijli Mahadev, Renuka Lake and Jakhoo Temple. The state is also referred to as "Dev Bhoomi" (literally meaning Abode of Gods) due to its mention as such in ancient Hindu texts and occurrence of large number of historical temples in the state.
+Triund is a campsite for travellers and trekkers on the way to Indrahar Pass, Dhauladhar Mountain Range.
+
+</p>
+     <p style="position: absolute; top: 1200px; left: 20px; color: red; font-size: 21.8px; font-weight: 400;">Culture</p>
+     <hr style="position: absolute; top:1238px; left:20px;  width: 1320px;">
+    <p style="position: absolute;top: 1235px; left: 20px;right: 225px; font-size:19.25px;font-weight: 200; text-align: justify;">Himachal Pradesh was one of the few states that had remained largely untouched by external customs, largely due to its difficult terrain. With the technological advancements, the state has changed very rapidly. Himachal Pradesh is a multireligional, multicultural as well as a multilingual state like other Indian states. Pahari languages are widely spoken in the state. Some of the most commonly spoken individual languages are Kangri, Mandeali, Kulvi, Chambeali and Kinnauri.[65] The Hindu communities residing in Himachal include the Brahmins, Rajputs, Kayasthas (Kaisthas), Kannets, Rathis and Kolis. There is also tribal population in the state which mainly comprises of Gaddis, Gujjars, Kinnauris, Pangawals and Lahaulis.
+
+</p>
+
+        </div>
+    </div>
+    <div class="card">
+    <div class="polaroid imagetrans">
+  <img src="images/220px-Himalayas_from_Kullu_Valley,_Himachal_Pradesh.jpg" alt="Norway" style="width:100%;">
+  <div class="container">
+    <p style=" color: darkblue;">Himalayas from Kullu Valley</p>
+  </div>
+</div>
+</div>
+<div class="card1">
+<div class="polaroid imagetrans">
+  <img src="images/Kalachakra_Temple.jpg" alt="Norway" style="width:100%">
+  <div class="container">
+    <p style=" color: darkblue;">Kalachakra Temple in the main street of Mcleod Ganj</p>
+  </div>
+</div>
+    </div>
+   
+    <hr style="position: absolute; top:1770px; left:5px;  width: 1325px;">
+    </body>
+    
+</html>

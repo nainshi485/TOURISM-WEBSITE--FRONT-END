@@ -1,0 +1,234 @@
+<!Doctype html>
+<html>
+<head>
+    <title>travel.india</title>
+    <style type="text/css"> 
+        #topbar {
+        
+                    width:100%;
+                    margin:0 auto;
+                    height:52px;
+                    position: fixed;
+                    background-color:cornflowerblue;
+                    z-index: 10;
+        }
+        a{
+            text-decoration: none;
+        }
+        
+        span:hover{
+            
+            color: red;
+        }
+        
+        span:visited{
+            
+            color: green;
+        }
+        span:active{
+            
+            color: red;
+        }
+        
+        
+        
+        body{
+            
+            
+                margin: 0;
+                padding: 0;
+                font-family: Arial,Tahoma,"Bitstream Vera Sans",sans-serif;
+            
+        }
+        
+        #logo{
+            
+            margin-top: 8px;
+            margin-left: 8px;
+            margin-right: 8px;
+            width:200px;
+            height: 40px;
+            float: left;
+            
+            
+            
+        }
+        
+        .topbar-section{
+            
+            
+            float: left;
+            border-left: 1px #cccccc solid;
+            height: 0%
+        }
+        
+        
+        .topbar-menu{
+            
+            font-weight: bold;
+            font-size: 90%;
+            padding: 15px 27px 0px 27px;
+            height: 35px;
+        }
+        
+        #signin{
+            
+            background-color: #00a680;
+            padding: 4px 9px 4px 9px;
+            margin: 0 20px 0 20px ;
+            color: whitesmoke;
+            margin-top: -3px;
+            float: left;
+            cursor: pointer;
+        }
+        
+        
+        #searchbox{
+            
+            background-color: #E4E4E4;
+            font-weight: bold;
+            font-size: 14px;
+            border: none;
+            padding: 5px;
+            padding-right: 35px;
+            margin-right: 0;
+            float: left;
+        }
+        #magnifying-glass{
+            
+            height: 27px;
+            margin-left: 5px;
+        }
+        #signingoogle{
+            
+                position: relative;
+                left:0px;
+                top: 200px;
+                width:300px;
+            height: 50px;
+            
+        }
+        #signintwitter{
+            
+            position: relative;
+            left: -305px;
+            top:275px;
+            width: 300px;
+            height: 50px;
+        }
+        #signinfb{
+            position: relative;
+            left: -610px;
+            top:350px;
+            width: 300px;
+            height: 50px;
+        }
+        #gig:hover{ text-decoration: underline;
+            
+            
+        }
+        #privacy{
+            
+            position: relative;
+            top: 340px;
+            left: 187px;
+            z-index: 1;
+        }
+        #signssks{
+            
+            position: relative;
+            left:750px;
+            top: -440px;
+            font-size: 25px;
+            color: black;
+            padding: 10px;
+            z-index: 1;
+        }
+        .imagetrans{
+            
+            transition:  transform .5s;   
+        }
+        .imagetrans:hover{
+            
+            transform: scale(1.1,1.1);
+        }
+        
+
+        
+        
+    </style>
+    
+    </head>    
+<body>
+    
+        <div id="topbar">
+            
+          <img id="logo" src="images/1.png" > 
+            
+            
+            <div id="signin-div" class="topbar-section">
+             </div>
+            
+            <div class="topbar-section topbar-menu ">
+             <a href="Home.html"> <span>Home</span></a>
+            </div>
+           <div class="topbar-section topbar-menu">
+            
+                   <a href="Holiday%20homes.html"> <span>Holiday Homes</span></a>
+            
+            </div>
+            <div class="topbar-section topbar-menu ">
+            
+                <a href=Flights.html> <span id>Flights</span></a>
+            
+            </div>
+            <div class="topbar-section topbar-menu ">
+            
+                <a href=Restaurants.html> <span>Restarants</span></a>
+            
+            </div>
+            <div class="topbar-section topbar-menu ">
+            
+                <a href=Things%20to%20do.html> <span >Things to do</span></a>
+            
+            </div>
+            
+            <div class="topbar-section topbar-menu ">
+            
+                <a href=join%20page.html> <input id="signin" type="button" value="SIGN IN"></a>
+            
+            </div>
+            
+            <div class="topbar-section topbar-menu">
+                
+                <input id="searchbox" type="text" placeholder="Search">
+                <input type="image" id="magnifying-glass"src="images/search-icon.png">
+                
+            </div>
+            
+    </div>
+    
+            <div >
+                    <span style="position: relative; color:black;left: 190px;top: 100px; font-size: 30px;font-weight:300;">continue with:</span>
+                    <input class="imagetrans" type="image" id="signingoogle" src="images/sign-in-with-google%20(2).png">
+                    <input class="imagetrans" type="image" id="signintwitter" src="images/twitter_login_button%20(2).png">
+                    <input class="imagetrans" type="image" id="signinfb" src="images/facebook-sign-in-button.png">
+                <p id="privacy">By proceeding, you agree to our<br> <span id="gig" style="color:#069; cursor: pointer;">Privacy Policy</span> and <span id="gig" style="color: #069; cursor: pointer;">Terms of Use.</span></p>
+                </div>
+    <hr width="1" size="400">
+    <div id="signssks">
+        <p style="font-weight: bold;">Already a Travel.india member?</p>
+        <p style="font-size: 20px; ">Email address</p>
+        <input style="width:300px;height: 40px;" type="email">
+        <p style="font-size: 20px; ">Password</p>
+        <input style="width:300px;height: 40px;" type="password">
+        <p id="gig" style="color:#069; cursor: pointer;">Forget Password?</p>
+        <input style="width:100px;height: 40px; cursor: pointer; background-color: #00a680;color: whitesmoke;"type="submit" value="Log IN">                            
+    
+    
+    </div>
+    
+    
+      </body>
+    
+</html>
